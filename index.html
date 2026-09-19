@@ -1,1 +1,197 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>معلومات السيارة</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #eeeeee;
+            color: #222;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: auto;
+            background: white;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        /* الصور */
+        .photos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .photos img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        /* معلومات السيارة */
+        .info {
+            margin-top: 25px;
+        }
+
+        .info-box {
+            display: flex;
+            justify-content: space-between;
+            padding: 14px;
+            margin-bottom: 8px;
+            background: #f5f5f5;
+            border-radius: 8px;
+        }
+
+        .label {
+            font-weight: bold;
+        }
+
+        /* الممشى */
+        .mileage {
+            margin-top: 20px;
+            padding: 20px;
+            text-align: center;
+            background: #222;
+            color: white;
+            border-radius: 12px;
+        }
+
+        .mileage-number {
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+
+        /* الملاحظات */
+        .notes {
+            margin-top: 25px;
+            padding: 18px;
+            background: #f5f5f5;
+            border-radius: 12px;
+        }
+
+        @media (max-width: 500px) {
+            .photos {
+                grid-template-columns: 1fr;
+            }
+
+            .photos img {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- عنوان الصفحة -->
+    <h1>🚗 معلومات السيارة</h1>
+
+
+    <!-- ========================= -->
+    <!-- الصور: غيّر أسماء الصور هنا -->
+    <!-- ========================= -->
+
+    <div class="photos">
+
+        <img src="car1.jpg" alt="صورة السيارة">
+
+        <img src="car2.jpg" alt="صورة السيارة">
+
+        <img src="car3.jpg" alt="صورة السيارة">
+
+        <img src="car4.jpg" alt="صورة السيارة">
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- معلومات السيارة -->
+    <!-- غيّر المعلومات هنا -->
+    <!-- ========================= -->
+
+    <div class="info">
+
+        <div class="info-box">
+            <span class="label">الماركة</span>
+            <span>Mercedes-Benz</span>
+        </div>
+
+        <div class="info-box">
+            <span class="label">الموديل</span>
+            <span>C220</span>
+        </div>
+
+        <div class="info-box">
+            <span class="label">سنة الصنع</span>
+            <span>1997</span>
+        </div>
+
+        <div class="info-box">
+            <span class="label">المحرك</span>
+            <span>2.2 Diesel</span>
+        </div>
+
+        <div class="info-box">
+            <span class="label">اللون</span>
+            <span>أسود</span>
+        </div>
+
+        <div class="info-box">
+            <span class="label">ناقل الحركة</span>
+            <span>أوتوماتيك</span>
+        </div>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- ممشى السيارة -->
+    <!-- ========================= -->
+
+    <div class="mileage">
+
+        <div>🛣️ ممشى السيارة</div>
+
+        <div class="mileage-number">
+            245,000 KM
+        </div>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- معلومات إضافية -->
+    <!-- ========================= -->
+
+    <div class="notes">
+
+        <h2>🔧 معلومات إضافية</h2>
+
+        <p>
+            اكتب هنا معلومات السيارة أو الصيانة أو أي ملاحظات تريد عرضها.
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>
